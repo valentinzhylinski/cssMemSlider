@@ -1,0 +1,17 @@
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #1872fa,
+    #7578f5,
+    #a080f0,
+    #bf8beb,
+    #d798e7
+  );
+  background-repeat: no-repeat;
+}
