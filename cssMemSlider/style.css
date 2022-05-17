@@ -47,7 +47,7 @@ body {
 
 .slider {
   width: 95%;
-  height: 70%;
+  height: 85%;
 }
 
 .slides {
@@ -67,8 +67,24 @@ body {
   justify-content: center;
 }
 
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subtitle {
+  margin: 0;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+  font-size: 40px;
+  font-weight: 700;
+}
+
 .slide-img {
-  height: 100%;
+  height: 90%;
 }
 
 .navigation {
@@ -80,9 +96,23 @@ body {
 }
 
 .nav-link {
+  width: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.nav-link:hover .nav-link-circle {
+  transition: 0.3s;
+  background-color: wheat;
+}
+
+.nav-link-circle {
   display: inline-block;
-  height: 10px;
-  width: 10px;
+  height: 13px;
+  width: 13px;
   border-radius: 50%;
   background-color: black;
 }
