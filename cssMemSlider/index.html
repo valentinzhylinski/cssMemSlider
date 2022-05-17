@@ -3,14 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="./Apple_meme.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Mem Slider</title>
   </head>
   <body>
-    <header class="header"></header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <div class="main-container">
+      <header class="header">
+        <div class="header-container">
+          <h1 class="header-title">MEMES</h1>
+        </div>
+      </header>
+      <main class="main">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slides">
+              <div class="slide" id="slide_1">
+                <img class="slide-img" src="./slide_1.jpeg" alt="1 slide" />
+              </div>
+              <div class="slide" id="slide_2">
+                <img class="slide-img" src="./slide_2.jpeg" alt="2 slide" />
+              </div>
+              <div class="slide" id="slide_3">
+                <img class="slide-img" src="./slide_3.jpeg" alt="3 slide" />
+              </div>
+              <div class="slide" id="slide_4">
+                <img class="slide-img" src="./slide_4.jpeg" alt="4 slide" />
+              </div>
+              <div class="slide" id="slide_5">
+                <img class="slide-img" src="./slide_5.jpeg" alt="5 slide" />
+              </div>
+            </div>
+          </div>
+          <div class="navigation">
+            <a class="nav-link" href="#slide_1"></a>
+            <a class="nav-link" href="#slide_2"></a>
+            <a class="nav-link" href="#slide_3"></a>
+            <a class="nav-link" href="#slide_4"></a>
+            <a class="nav-link" href="#slide_5"></a>
+          </div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
   </body>
-  <script src="./index.js"></script>
 </html>

@@ -1,10 +1,5 @@
 body {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+  margin: 0;
   background-image: linear-gradient(
     to right top,
     #1872fa,
@@ -14,4 +9,80 @@ body {
     #d798e7
   );
   background-repeat: no-repeat;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header-container {
+  height: 25vh;
+}
+
+.header-title {
+  margin: 0 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
+  font-size: 60px;
+  line-height: 25vh;
+  color: gainsboro;
+  text-align: center;
+}
+
+.slider-container {
+  margin: 0 auto;
+  padding: 20px 0px;
+  height: 60vh;
+  width: 60%;
+  background-color: white;
+  border: 6px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider {
+  width: 95%;
+  height: 70%;
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  height: 100%;
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-img {
+  height: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  height: 5%;
+}
+
+.nav-link {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: black;
 }
